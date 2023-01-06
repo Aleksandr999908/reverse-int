@@ -1,9 +1,17 @@
 module.exports = function reverse (n) {
-    
-        let number;
-        number = [...`${Math.abs(n)}`].reverse().join('');
-    
-    
-        return number;
-    
+       
+       if (n < 0) return reverse(-n);
+       
+       let number = [...`${Math.abs(n)}`].reverse().join('');
+       
+          return number;
+        
+        
+         
+        
+       
+       
+        
+              
 }
+
